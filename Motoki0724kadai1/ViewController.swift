@@ -17,23 +17,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
     @IBAction func didTapButton(_ sender: Any) {
-     
-        let number1 = Int(textField1.text ?? "") ?? 00
-        let number2 = Int(textField2.text ?? "") ?? 00
-        let number3 = Int(textField3.text ?? "") ?? 00
-        let number4 = Int(textField4.text ?? "") ?? 00
-        let number5 = Int(textField5.text ?? "") ?? 00
+        let number1 = Int(textField1.text ?? "") ?? 0
+        let number2 = Int(textField2.text ?? "") ?? 0
+        let number3 = Int(textField3.text ?? "") ?? 0
+        let number4 = Int(textField4.text ?? "") ?? 0
+        let number5 = Int(textField5.text ?? "") ?? 0
         
         let result = number1 + number2 + number3 + number4 + number5
         
         label.text = "\(result)"
-        
     }
 }
-
